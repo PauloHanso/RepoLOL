@@ -1,25 +1,29 @@
-#include <iostream>
-
-using namespace std;
+#pragma once
 
 class personagens
 {
 public:
     personagens();
+    personagens(const char* nome, const char* lane, unsigned int anoDeLancamento, unsigned int nota);
+    // Construtor e sobrecarga de construtor
 
-    void mostrar()
-	{
-        cout << nome << endl;
-        cout << lane << endl;
-        cout << data << endl;
-        cout << dificuldade << endl;
-        cout << nota << endl;
-    }
-protected:
-    const char* nome;
-    const char* lane;
-    unsigned int data = 0;
-    const char* dificuldade;
-    unsigned int nota = 0;
+    // Métodos de configuração (setters)
+    void setNome(const char* nome);
+    void setLane(const char* lane);
+    void setAnoDeLancamento(unsigned int anoDeLancamento);
+    void setNota(unsigned int nota);
 
+    // Métodos de obtenção (getters)
+    const char* getNome() const;
+    const char* getLane() const;
+    unsigned int getAnoDeLancamento() const;
+    unsigned int getNota() const;
+
+    void mostrar();
+
+private:
+    char Nome[100];
+    char Lane[20];
+    unsigned int AnoDeLancamento;
+    unsigned int Nota;
 };
