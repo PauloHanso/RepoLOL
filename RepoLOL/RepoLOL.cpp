@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 
-    cout << "Zed O mestre das sombras!" << endl;
+    cout << "O mestre das sombras!" << endl;
    
     personagens* PersonagemZED = new personagens();
     PersonagemZED->setNome("ZED");
@@ -19,7 +19,7 @@ int main()
 
     cout << endl;
 
-    cout << "Akshan, A sentinela rebelde!" << endl;
+    cout << "A sentinela rebelde!" << endl;
     personagens* PersonagemAkshan = new personagens();
     PersonagemAkshan->setNome("AKSHAN");
     PersonagemAkshan->setLane("MID");
@@ -32,7 +32,7 @@ int main()
     cout << endl;
 
 
-    cout << "Aatrox, a espada DARKIN!" << endl;
+    cout << "A espada DARKIN!" << endl;
     personagens* PersonagemAatrox = new personagens();
     PersonagemAatrox->setNome("AATROX");
     PersonagemAatrox->setLane("TOP");
@@ -44,7 +44,7 @@ int main()
 
     cout << endl;
 
-    cout << "Nautilus, Tita das profundezas!" << endl;
+    cout << "Tita das profundezas!" << endl;
     personagens* PersonsagemNautilus = new personagens();
     PersonsagemNautilus->setNome("Nautilus");
     PersonsagemNautilus->setLane("Supp/mid");
@@ -56,5 +56,14 @@ int main()
 
     cout << endl;
 
+    cout << "O aspecto do crepusculo!" << endl;
+    personagens* PersonagemZoe = new personagens();
+    PersonagemZoe->setNome("Zoe");
+    PersonagemZoe->setLane("mid");
+    PersonagemZoe->setAnoDeLancamento(2018);
+    PersonagemZoe->setNota(5);
+
+    PersonagemZoe->mostrar();
+    delete PersonagemZoe;
     return 0;
 }
