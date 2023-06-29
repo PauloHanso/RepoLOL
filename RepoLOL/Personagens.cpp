@@ -17,9 +17,9 @@ personagens::personagens(const char* nome, const char* lane, unsigned int anoDeL
     setNota(nota);
 }
 
-void personagens::setNome(const char* nome)
+auto personagens::setNome(const char* nome) -> void
 {
-    strncpy_s(Nome, 10, nome, 10);
+    strncpy_s(Nome, 15, nome, 15);
     
 }
 

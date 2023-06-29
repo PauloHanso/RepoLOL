@@ -46,7 +46,7 @@ int main()
 
     cout << "Tita das profundezas!" << endl;
     personagens* PersonsagemNautilus = new personagens();
-    PersonsagemNautilus->setNome("Nautilus");
+    PersonsagemNautilus->setNome("NAUTILUS");
     PersonsagemNautilus->setLane("Supp/mid");
     PersonsagemNautilus->setAnoDeLancamento(2012);
     PersonsagemNautilus->setNota(7);
@@ -58,12 +58,41 @@ int main()
 
     cout << "O aspecto do crepusculo!" << endl;
     personagens* PersonagemZoe = new personagens();
-    PersonagemZoe->setNome("Zoe");
-    PersonagemZoe->setLane("mid");
+    PersonagemZoe->setNome("ZOE");
+    PersonagemZoe->setLane("Mid");
     PersonagemZoe->setAnoDeLancamento(2018);
     PersonagemZoe->setNota(5);
 
     PersonagemZoe->mostrar();
     delete PersonagemZoe;
+
+    cout << endl;
+
+    cout << "A ascensao dos espinhos!" << endl;
+    personagens* PersonagemZyra = new personagens();
+    PersonagemZyra->setNome("ZYRA");
+    PersonagemZyra->setLane("Mid/Supp");
+    PersonagemZyra->setAnoDeLancamento(2012);
+    PersonagemZyra->setNota(6);
+
+    PersonagemZyra->mostrar();
+    delete PersonagemZyra;
+
+    cout << endl;
+
+    cout << "O rei barbaro!" << endl;
+    personagens* PersonagemTrynda = new personagens();
+    PersonagemTrynda->setNome("Tryndamere");
+    PersonagemTrynda->setLane("Top");
+    PersonagemTrynda->setAnoDeLancamento(2009);
+    PersonagemTrynda->setNota(7);
+
+    PersonagemTrynda->mostrar();
+    delete PersonagemTrynda;
+
+    cout << endl;
+
+
+
     return 0;
 }
