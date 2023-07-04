@@ -82,7 +82,7 @@ int main()
 
     cout << "O rei barbaro!" << endl;
     personagens* PersonagemTrynda = new personagens();
-    PersonagemTrynda->setNome("Tryndamere");
+    PersonagemTrynda->setNome("TRYNDAMERE");
     PersonagemTrynda->setLane("Top");
     PersonagemTrynda->setAnoDeLancamento(2009);
     PersonagemTrynda->setNota(7);
@@ -92,7 +92,29 @@ int main()
 
     cout << endl;
 
+    cout << "O estripador das aguas sangrentas!" << endl;
+    personagens* PersonagemPyke = new personagens();
+    PersonagemPyke->setNome("PYKE");
+    PersonagemPyke->setLane("Supp");
+    PersonagemPyke->setAnoDeLancamento(2018);
+    PersonagemPyke->setNota(9);
 
+    PersonagemPyke->mostrar();
+    delete PersonagemPyke;
+
+    cout << endl;
+
+    cout << "O curador das areias!" << endl;
+    personagens* PersonagemNasus = new personagens();
+    PersonagemNasus->setNome("NASUS");
+    PersonagemNasus->setLane("Top");
+    PersonagemNasus->setAnoDeLancamento(2009);
+    PersonagemNasus->setNota(7);
+
+    PersonagemNasus->mostrar();
+    delete PersonagemNasus;
+
+    cout << endl;
 
     return 0;
 }
