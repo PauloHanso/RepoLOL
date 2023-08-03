@@ -116,5 +116,28 @@ int main()
 
     cout << endl;
 
-    return 0;
+    cout << "A fera das cem mordidas!" << endl;
+    personagens* PersonagemNaafiri = new personagens();
+    PersonagemNaafiri->setNome("NAAFIRI");
+    PersonagemNaafiri->setLane("Mid");
+    PersonagemNaafiri->setAnoDeLancamento(2023);
+    PersonagemNaafiri->setNota(8);
+
+    PersonagemNaafiri->mostrar();
+    delete PersonagemNaafiri;
+
+    cout << endl;
+
+    cout << "A Crianca sombria!" << endl;
+    personagens* PersonsagemAnnie = new personagens();
+    PersonsagemAnnie->setNome("ANNIE");
+    PersonsagemAnnie->setLane("Mid");
+    PersonsagemAnnie->setAnoDeLancamento(2009);
+    PersonsagemAnnie->setNota(7);
+
+    PersonsagemAnnie->mostrar();
+    delete PersonsagemAnnie;
+
+    cout << endl;
+	return 0;
 }
