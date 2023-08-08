@@ -139,5 +139,30 @@ int main()
     delete PersonsagemAnnie;
 
     cout << endl;
+
+    cout << "O rei destruido!" << endl;
+    personagens* PersonagensViego = new personagens();
+    PersonagensViego->setNome("VIEGO");
+    PersonagensViego->setLane("Jungle");
+    PersonagensViego->setAnoDeLancamento(2021);
+    PersonagensViego->setNota(9);
+
+    PersonagensViego->mostrar();
+    delete PersonagensViego;
+
+    cout << endl;
+
+    cout << "A filha do vazio!" << endl;
+    personagens* PersonagemKaisa = new personagens();
+    PersonagemKaisa->setNome("KAISA");
+    PersonagemKaisa->setLane("ADC");
+    PersonagemKaisa->setAnoDeLancamento(2018);
+    PersonagemKaisa->setNota(8);
+
+    PersonagemKaisa->mostrar();
+    delete PersonagemKaisa;
+
+    cout << endl;
+
 	return 0;
 }
